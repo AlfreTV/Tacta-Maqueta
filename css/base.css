@@ -54,7 +54,7 @@
 
     .container-intro {
         height: 100vh;
-        background-image: url("img/fondo2.png");
+        background-image: url("/img/fondo2.png");
         background-position: center;
       display: flex;
       flex-direction: row;
