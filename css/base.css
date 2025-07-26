@@ -1,0 +1,536 @@
+    html{
+    scroll-behavior: smooth;
+}
+    
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    .cabezera{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 100;
+        position: fixed;
+    }
+
+    .containernav{
+        width: 900px;
+        height: 25px;
+        margin-top: 20px;
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.363);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+        padding: 15px;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 35px;
+        height: auto;
+    }
+
+    .link_menu{
+        letter-spacing: 1px;
+        text-decoration: none;
+        margin: 20px;
+    }
+
+    .link_menu:hover{
+        font-weight: bold;
+        text-shadow: rgba(146, 148, 255, 0.363);
+    }
+
+    .container-intro {
+        height: 100vh;
+        background-image: url("img/fondo2.png");
+        background-position: center;
+      display: flex;
+      flex-direction: row;
+      padding: 40px;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .intro {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .intro h1 {
+      font-size: 2.5em;
+      color: #5d9b9b;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background-color: #f08a5d;
+      text-decoration: none;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease all;
+    }
+
+    .btn:hover {
+      background-color: #e87e52;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.219);
+    }
+
+    .slider {
+      flex: 1;
+      position: relative;
+      max-width: 550px;
+      overflow: hidden;
+      border-radius: 100px 12px 12px 100px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+/* esta seccion es de la filosofia */
+
+
+    .filosofia-section {
+        height: 100vh;
+  background-color: #eaf6f6;
+  padding: 60px 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filosofia-container {
+    align-items: center;
+    justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.filosofia-text {
+  flex: 1 1 300px;
+}
+
+.filosofia-text h2 {
+  font-size: 2em;
+  color: #5d9b9b;
+}
+
+.filosofia-text p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-top: 15px;
+}
+
+.filosofia-pilares {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pilar {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+}
+
+.pilar h3 {
+  color: #f08a5d;
+  margin-bottom: 10px;
+}
+
+
+/* esta seccion es modos de compra */
+
+.compra-section {
+    height: 100vh;
+  background-color: #ecffe4;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.compra-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.compra-header h2 {
+  font-size: 2em;
+  color: #5d9b9b;
+}
+
+.compra-header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.container-compras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compra-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-map{
+    margin: 20px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.modo {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  max-width: 300px;
+  text-align: center;
+  transition: 0.3s ease all;
+}
+
+.modo:hover {
+    scale: 105%;
+    box-shadow: 0 4px 10px rgba(9, 255, 0, 0.301);
+}
+
+.modo h3 {
+  font-size: 1.2em;
+  color: #f08a5d;
+  margin-bottom: 10px;
+}
+
+.modo p {
+  font-size: 1em;
+  color: #444;
+}
+
+.compra-extra {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1em;
+  color: #444;
+}
+
+.compra-extra a {
+  color: #5d9b9b;
+  text-decoration: none;
+}
+
+/* esta seccion es de coleccion */
+
+.coleccion-section {
+  background-color: #ffe9e9;
+  padding: 60px 20px;
+  color: #2e2e2e;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.coleccion-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.coleccion-header h2 {
+  font-size: 2.4em;
+  color: #5d9b9b;
+}
+
+.coleccion-header p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #555;
+}
+
+.coleccion-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pieza {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s ease all;
+}
+
+.pieza:hover{
+    scale: 105%;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.301);
+}
+
+.pieza-img {
+    width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.pieza-img:hover{
+    scale: 105%;
+    transition: 0.3s ease all;
+}
+
+.pieza h3 {
+  font-size: 1.3em;
+  color: #f08a5d;
+}
+
+.pieza p {
+  font-size: 1em;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* esta seccion es de testimonio */
+
+.testimonios-section {
+  background-color: #fff7df;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2a2a2a;
+}
+
+.testimonios-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.testimonios-header h2 {
+  font-size: 2.2em;
+  color: #5d9b9b;
+}
+
+.testimonios-header p {
+  font-size: 1.2em;
+  color: #444;
+  margin-top: 10px;
+}
+
+.testimonios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonio {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 320px;
+}
+
+.comentario {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.persona {
+  font-size: 0.95em;
+  color: #777;
+  text-align: right;
+}
+
+/* esta seccion es de contacto */
+
+
+.contacto-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.contacto-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.contacto-header h2 {
+  font-size: 2em;
+  color: #5d9b9b;
+}
+
+.contacto-header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.contacto-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacto-form label {
+  font-weight: bold;
+  color: #444;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.contacto-form button {
+  background-color: #5d9b9b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+  background-color: #4a8888;
+}
+
+.contacto-alt {
+    margin: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+
+/* esta seccion es el pie de pagina */
+
+.tacta-footer {
+  background-color: #eaf6f6;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #444;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frase{
+    font-size: 1 em;
+    color: #5d9b9b;
+    margin-bottom: 10px;
+
+}
+
+.logo-pie{
+    width: 100px;
+    height: auto;
+    align-items: center;
+}
+
+.contenedor-equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tit-equipo{
+    font-size: 1 em;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: #5d9b9b;
+}
+
+.integrante {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #5d9b9b;
+  font-weight: bold;
+}
+
+.footer-copy {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
+}
